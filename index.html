@@ -36,9 +36,10 @@
             <span class="tag">Real-Time Combat</span>
             <h2>EPIC CARD BATTLES</h2>
             <p>Collect and upgrade dozens of cards featuring the Clash of Clans troops, spells, and defenses you know and love.</p>
+
             <div class="store-group">
-                <div class="btn-store">App Store</div>
-                <div class="btn-store">Google Play</div>
+                <div class="btn-store" id="appStoreBtn">App Store</div>
+                <div class="btn-store" id="playStoreBtn">Google Play</div>
             </div>
         </div>
     </div>
@@ -83,9 +84,25 @@
     </div>
 </section>
 
+<!-- ✅ CONTACT SECTION -->
+<section class="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contactForm">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit">Send Message</button>
+    </form>
+
+    <p id="formStatus"></p>
+</section>
+
 <footer>
     <p>© 2026 Supercell. All rights reserved.</p>
 </footer>
 
+<!-- JS -->
+<script src="script.js"></script>
 </body>
 </html>
