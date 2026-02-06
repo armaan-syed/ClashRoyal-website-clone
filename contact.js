@@ -6,7 +6,7 @@ document.getElementById("contactForm").addEventListener("submit", function (e) {
     const message = this.message.value;
 
     const mailtoLink = `
-mailto:armaansyed009@gmail.com@gmail.com
+mailto:armaansyed009@gmail.com
 ?subject=Contact from ${name}
 &body=From: ${email}%0A%0A${message}
     `;
