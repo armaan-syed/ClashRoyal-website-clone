@@ -1,15 +1,20 @@
 document.getElementById("contactForm").addEventListener("submit", function (e) {
     e.preventDefault();
 
-    const name = this.name.value;
-    const email = this.email.value;
-    const message = this.message.value;
+    const params = {
+        name: this.name.value,
+        email: this.email.value,
+        message: this.message.value,
+    };
 
-    const mailtoLink = `
-mailto:armaansyed009@gmail.com
-?subject=Contact from ${name}
-&body=From: ${email}%0A%0A${message}
-    `;
-
-    window.location.href = mailtoLink.trim();
+    emailjs
+        .send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", params)
+        .then(() => {
+            alert("Message sent successfully 🚀");
+            this.reset();
+        })
+        .catch((error) => {
+            console.error("EmailJS Error:", error);
+            alert("Failed to send message ❌");
+        });
 });

@@ -38,8 +38,8 @@
             <p>Collect and upgrade dozens of cards featuring the Clash of Clans troops, spells, and defenses you know and love.</p>
 
             <div class="store-group">
-                <div class="btn-store" id="appStoreBtn">App Store</div>
-                <div class="btn-store" id="playStoreBtn">Google Play</div>
+                <div class="btn-store">App Store</div>
+                <div class="btn-store">Google Play</div>
             </div>
         </div>
     </div>
@@ -84,7 +84,7 @@
     </div>
 </section>
 
-<!-- ✅ CONTACT SECTION -->
+<!-- CONTACT CTA -->
 <section class="contact-cta">
     <h2>Want to get in touch?</h2>
     <p>Questions, feedback, or collaboration ideas — let’s talk.</p>
@@ -94,12 +94,22 @@
     </a>
 </section>
 
-
 <footer>
     <p>© 2026 Supercell. All rights reserved.</p>
 </footer>
 
-<!-- JS -->
+<!-- ✅ EMAILJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- ✅ EMAILJS INIT -->
+<script>
+    (function () {
+        emailjs.init("YOUR_PUBLIC_KEY"); // replace with EmailJS public key
+    })();
+</script>
+
+<!-- Your JS -->
 <script src="script.js"></script>
+
 </body>
 </html>
