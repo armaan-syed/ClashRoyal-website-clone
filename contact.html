@@ -15,11 +15,20 @@
         <input type="text" name="name" placeholder="Your Name" required>
         <input type="email" name="email" placeholder="Your Email" required>
         <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit">Send Message</button>
+        <button type="submit" id="sendBtn">Send Message</button>
     </form>
 
     <a href="index.html" class="back-link">← Back to Home</a>
 </section>
+
+<!-- EmailJS SDK -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<script>
+    (function () {
+        emailjs.init("9ttxV2irBrCUmqp4A");
+    })();
+</script>
 
 <script src="contact.js"></script>
 </body>
