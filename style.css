@@ -283,6 +283,22 @@ footer {
     font-size: 0.95rem;
 }
 
+.btn-store {
+    background: black;
+    color: white;
+    padding: 14px 28px;
+    border-radius: 10px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: transform 0.2s;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn-store:hover { 
+    transform: translateY(-3px); 
+}
+
 
 /* RESPONSIVE */
 @media (max-width: 1024px) {
